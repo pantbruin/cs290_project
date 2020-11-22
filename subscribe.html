@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>CHEVROLET CORVETTE</h1>
+    <h2>Subscribe</h2>
+    <a href="index.html">
+      <img id="header-image" src="https://i.imgur.com/V3wNL2a.png" alt="">
+    </a>
+    <nav id="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History of Corvettes</a></li>
+        <li><a href="buyersguide.html">Buyer's Guide</a></li>
+        <li><a href="subscribe.html">Subscribe</a></li>
+      </ul>
+    </nav>
+
+    <p class="normalContent">Subscribe to my bimonthly newsletter! Every two months I'll send you an
+      email with the latest Corvette news, upcoming events, sales, and more!
+      Also, if you are able and willing, please consider donating for the upkeep of this website! Anything is appreciated.</p>
+    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+      <fieldset>
+        <legend>Subscribe or Donate!</legend>
+        <fieldset>
+          <label>
+            Email:
+            <input type="email" name="email_input">
+          </label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <label>
+            Your favorite Corvette Exterior Color!:
+            <select name="favcarcolor">
+              <option value="">--Please choose an option--</option>
+              <option value="Rapid Blue">Rapid Blue</option>
+              <option value="Accelerate Yellow">Accelerate Yellow</option>
+              <option value="Sebring Orange Tintcoat">Sebring Orange Tintcoat</option>
+              <option value="Torch Red">Torch Red</option>
+              <option value="Long Beach Red Metallic Tintcoat">Long Beach Red Metallic Tintcoat</option>
+              <option value="Zeus Bronze Metallic">Zeus Bronze Metallic</option>
+              <option value="Elkhart Lake Blue Metallic">Elkhart Lake Blue Metallic</option>
+              <option value="Shadow Gray Metallic">Shadow Gray Metallic</option>
+              <option value="Ceramic Matrix Gray Metallic">Ceramic Matrix Gray Metallic</option>
+              <option value="Blade Silver Metallic">Blade Silver Metallic</option>
+              <option value="Arctic White">Arctic White</option>
+              <option value="Black">Black</option>
+            </select>
+          </label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <label>
+            Select those that describe you:
+            <br>
+            <input type="checkbox" name="firstoption" value="owner">
+            <label for="firstoption">I am a Corvette Owner</label>
+            <br>
+            <input type="checkbox" name="secondoption" value="interested">
+            <label for="secondoption">I do not own a Corvette, but I am interested in owning one</label>
+            <br>
+            <input type="checkbox" name="thirdoption" value="curious">
+            <label for="thirdoption"> I do not own a Corvette and am not currently interested in buying one.</label>
+            <br>
+          </label>
+        </fieldset>
+        <br>
+        <fieldset>
+          <label>
+            Consider a Donation:
+            <label class="radiobutt"><input type="radio" name="donation" value="100"> $100</label>
+            <label class="radiobutt"><input type="radio" name="donation" value="50"> $50</label>
+            <label class="radiobutt"><input type="radio" name="donation" value="20"> $20</label>
+            <label class="radiobutt"><input type="radio" name="donation" value="10"> $10</label>
+            <label class="radiobutt"><input type="radio" name="donation" value="5"> $5</label>
+            <label class="radiobutt"><input type="radio" name="donation" value="1"> $1</label>
+            <label class="radiobutt"><input type="radio" name="donation" value="none">You don't get my money!</label>
+          </label>
+          <br>
+          <input type="submit">
+        </fieldset>
+      </fieldset>
+    </form>
+
+    <form action="" method="get">
+      <fieldset>
+        <legend>Select a category from the dropdown for a related Chuck Norris Joke!</legend>
+        <select name="jokes" id="jokeCategory">
+          <option value="">--Please choose an option--</option>
+          <option value="animal">Animal</option>
+          <option value="career">Career</option>
+          <option value="celebrity">Celebrity</option>
+          <option value="fashion">Fashion</option>
+          <option value="food">Food</option>
+          <option value="history">History</option>
+          <option value="movie">Movie</option>
+          <option value="money">Money</option>
+          <option value="travel">Travel</option>
+          <option value="science">Science</option>
+        </select>
+        <input type="submit" id="requestJoke">
+      </fieldset>
+    </form>
+    <div class="jokeDiv">
+      <p id="output"></p>
+    </div>
+    <script src="./scripts/subscribe.js" charset="utf-8"></script>
+</body>
+
+</html>
